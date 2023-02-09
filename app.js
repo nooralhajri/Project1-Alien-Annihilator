@@ -292,7 +292,7 @@ class Bomb {
     })
   }
 }
-
+//powerup neon balls
 class PowerUp {
   constructor({ position, velocity }) {
     this.position = position
@@ -703,7 +703,7 @@ function animate() {
 
       for (let j = bombs.length - 1; j >= 0; j--) {
         const bomb = bombs[j]
-
+        //console.log (bomb, invader)
         const invaderRadius = 15
 
         // if bomb touches invader, remove invader
@@ -785,15 +785,14 @@ function animate() {
           }, 0)
         }
       })
-      if (lives !== 0){
       // remove player if invaders touch it
       if (
         rectangularCollision({ rectangle1: invader, rectangle2: player}) &&
         !game.over
       ) 
-        { lives --
-        console.log (lives)}
-    } else { endGame()}
+       // { lives --}
+    // if (lives === 0){
+     endGame()
   } // end looping over grid.invaders
   }) 
   if (keys.ArrowLeft.pressed && player.position.x >= 0) {
@@ -840,10 +839,10 @@ function animate() {
       })
     )
   }  
-  c.fillStyle = 'red'; // for lives
-  c.font = '20px Arial';
-  var textWidth = c.measureText(`Lives: ${lives}`).width;
-  c.fillText(`Lives: ${lives}`, canvas.width - textWidth - 10, 30);
+  // c.fillStyle = 'red'; // for lives
+  // c.font = '20px Arial';
+  // var textWidth = c.measureText(`Lives: ${lives}`).width;
+  // c.fillText(`Lives: ${lives}`, canvas.width - textWidth - 10, 30);
   
   frames++
 }
