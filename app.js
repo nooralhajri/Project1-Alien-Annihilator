@@ -328,14 +328,14 @@ class Grid {
       x: 3,
       y: 0
     }
-
+//invaders array stored in invader grid
     this.invaders = []
 
-    const columns = Math.floor(Math.random() * 10 + 5)
-    const rows = Math.floor(Math.random() * 5 + 2)
+    const columns = Math.floor(Math.random() * 10 + 5)//minimum of 5 invaders in place
+    const rows = Math.floor(Math.random() * 5 + 2)  // 2-7 rows, making rows random so that game stays interesting
 
     this.width = columns * 30
-
+ // creating multiple rows and columns of invaders next to each other
     for (let x = 0; x < columns; x++) {
       for (let y = 0; y < rows; y++) {
         this.invaders.push(
@@ -428,6 +428,12 @@ let bombs = []
 let powerUps = []
 let lives = 3
 
+
+// We come to game logic and mechanics. We have keys object to control the player 
+// The game logic is implemented using a game object with an "over" and "active" property.
+//  The "over" property indicates if the game has ended
+//  the "active" property indicates if the game is currently in progress or not.
+
 let keys = {
   ArrowLeft: {
     pressed: false
@@ -453,7 +459,7 @@ let fps = 60
 let fpsInterval = 1000 / fps
 let msPrev = window.performance.now()
 
-function init() {
+function init() {  //"init" function called to reset the game and initialize the game objects.
   player = new Player()
   projectiles = []
   grids = []
@@ -501,6 +507,11 @@ function init() {
     )
   }
 }
+
+//The "endGame" function is called when the game is over
+//sets the "game.over" property to true
+//sets the "game.active" property to false to stop the game loop.
+// displays the "restartScreen" element and shows the final score.
 
 function endGame() {
  
