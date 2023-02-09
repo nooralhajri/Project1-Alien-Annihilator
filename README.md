@@ -1,20 +1,10 @@
+PROJECT 1 - ALIEN ANNIHILATOR
+
 ReadMe
-
-Game Mechanics
-
-The game mechanics behind the Space Invaders game are as follows:
-* The player controls a spaceship at the bottom of the screen, and the objective is to defeat the aliens moving across the screen from top to bottom and left to right.
-* The player can move the spaceship left or right and shoot the aliens by firing missiles.
-* The aliens move across the screen and fire missiles at the player's spaceship.
-* The player must avoid the alien missiles and destroy all the aliens to advance to the next level.
-* If the player's spaceship is hit by an alien missile, the player loses a life. The game is over when the player loses all their lives.
-* The player earns points for each alien destroyed
-
-
 
 Alien Annihilator - Space Invaders-esque Game in Vanilla JavaScript
 
-A classic arcade game, now implemented in vanilla JavaScript! Play as a spaceship and defeat the invading aliens before they reach the bottom of the screen.
+I was tasked to build a game for module 1 'Front End Development' at General Assembly. I chose to build Alien Annihilator - Space Invaders-esque Game. It is based on a classic arcade game, now implemented in vanilla JavaScript! Play as a spaceship and annihilate the aliens before they shoot you or get to your part of the screen.
 
 Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
@@ -33,6 +23,17 @@ Game Play
 * Avoid the alien missiles and destroy all the aliens to advance in the game and score points.
 * If your spaceship is hit by an alien missile, you lose a life. The game is over when you lose all your lives.
 * Earn points for each alien destroyed.
+
+Game Mechanics
+
+The game mechanics behind the Space Invaders game are as follows:
+* The player controls a spaceship at the bottom of the screen, and the objective is to defeat the aliens moving across the screen from top to bottom and left to right.
+* The player can move the spaceship left or right and shoot the aliens by firing missiles.
+* The aliens move across the screen and fire missiles at the player's spaceship.
+* The player must avoid the alien missiles and destroy all the aliens to advance to the next level.
+* If the player's spaceship is hit by an alien missile, the player loses a life. The game is over when the player loses all their lives.
+* The player earns points for each alien destroyed
+
 
 Built With
 * Vanilla JavaScript - The language used to implement the game logic, graphics, and user input.
